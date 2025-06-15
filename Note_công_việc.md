@@ -103,59 +103,32 @@ if __name__ == "__main__":
     asyncio.run(create_deployment())
 ```
 
-```text
-# README.md
-# 1. Cài đặt
-
+### 1. Cài đặt
 ```bash
-
-python  -m  venv  venv && source  venv/bin/activate
-
-pip  install  'prefect>=2.14.0,<2.15'
-
-pip  install  "griffe<0.37"  --force-reinstall
-
-pip  install  -r  requirements.txt
-
+python -m venv venv && source venv/bin/activate
+pip install 'prefect>=2.14.0,<2.15'
+pip install "griffe<0.37" --force-reinstall
+pip install -r requirements.txt
 ```
 
-  
-
-# 2. Khởi tạo project Prefect
-
+### 2. Khởi tạo project Prefect
 ```bash
-
-prefect  init
-
+prefect init
 ```
 
-  
-
-# 3. Chạy Prefect server + agent (cửa sổ riêng)
-
+### 3. Chạy Prefect server + agent (cửa sổ riêng)
 ```bash
-
-prefect  server  start
-
-  
+prefect server start
 
 # (Cửa sổ khác)
-
-prefect  agent  start  --pool  default-agent-pool
-
+prefect agent start --pool default-agent-pool
 ```
 
-  
-
-# 4. Tạo deployment và lên lịch trận đấu
-
+### 4. Tạo deployment và lên lịch trận đấu
 ```bash
-
-python  deploy_match.py
-
-```
+python deploy_match.py
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTc5ODAyNCwyMDg1MDcxODkyLDM3ND
+eyJoaXN0b3J5IjpbMjAwNTY2MDEwOSwyMDg1MDcxODkyLDM3ND
 Q3MDg0OF19
 -->
