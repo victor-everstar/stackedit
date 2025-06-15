@@ -36,7 +36,7 @@ def check_match_status(match_id: str):
     # raise Exception("Temporary error")  # test retry
     return "ongoing"
 
-@flow(name="monitor_match_flow")
+@flow(name="monitor_match_flow_vuotnh")
 async def monitor_match_flow(match_id: str, end_time: str):
     end_dt = datetime.fromisoformat(end_time)
 
@@ -62,8 +62,99 @@ if __name__ == "__main__":
     asyncio.run(delete_deployment_by_id(DEPLOYMENT_ID))
 ```
 ```python
+from prefect.client import get_client
+from datetime import datetime, timedelta
+from prefect.server.schemas.schedules import IntervalSchedule
+import asyncio
+from prefect.states import Scheduled
+
+MATCH_ID = "match_123"
+START_TIME = datetime.utcnow() + timedelta(seconds=10)
+END_TIME = START_TIME + timedelta(minutes=5)
+
+async def create_deployment():
+    from prefect.deployments import Deployment
+    from flows.monitor_match import monitor_match_flow
+
+    schedule = IntervalSchedule(
+        interval=timedelta(seconds=10),                # Lặp lại mỗi 1 phút
+        anchor_date=START_TIME                        # Bắt đầu từ thời điểm này
+    )
+
+    deployment = await Deployment.build_from_flow(
+        flow=monitor_match_flow,
+        name=f"monitor-{MATCH_ID}",
+        parameters={"match_id": MATCH_ID, "end_time": END_TIME.isoformat()},
+        schedule=schedule,
+        work_queue_name="default",
+    )
+    await deployment.apply()
+
+    async with get_client() as client:
+        registered_deployment = await client.read_deployment_by_name(
+            name=f"monitor_match_flow_vuotnh/monitor-{MATCH_ID}"
+        )
+
+        print(registered_deployment.id)
+
+        print(f"✅ Flow run scheduled at {START_TIME} for match {MATCH_ID}")
+
+if __name__ == "__main__":
+    asyncio.run(create_deployment())
+```
+
+```text
+# README.md
+# 1. Cài đặt
+
+```bash
+
+python  -m  venv  venv && source  venv/bin/activate
+
+pip  install  'prefect>=2.14.0,<2.15'
+
+pip  install  "griffe<0.37"  --force-reinstall
+
+pip  install  -r  requirements.txt
 
 ```
+
+  
+
+# 2. Khởi tạo project Prefect
+
+```bash
+
+prefect  init
+
+```
+
+  
+
+# 3. Chạy Prefect server + agent (cửa sổ riêng)
+
+```bash
+
+prefect  server  start
+
+  
+
+# (Cửa sổ khác)
+
+prefect  agent  start  --pool  default-agent-pool
+
+```
+
+  
+
+# 4. Tạo deployment và lên lịch trận đấu
+
+```bash
+
+python  deploy_match.py
+
+```
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTA3MTg5Ml19
+eyJoaXN0b3J5IjpbLTQ1NTc5ODAyNCwyMDg1MDcxODkyXX0=
 -->
