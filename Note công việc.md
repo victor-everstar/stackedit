@@ -234,7 +234,19 @@ async def _sportmonk_client(self, endpoint: str, provider_secret_token: str, cus
                     raise
                 await asyncio.sleep(RETRY_BACKOFF * attempt)
 ```
+```python
+from aiobreaker import CircuitBreaker
+
+breaker = CircuitBreaker(fail_max=3, reset_timeout=60)  # 3 lần lỗi, chờ 30s
+
+class SportmonksAPIProcessor:
+    ...
+    @breaker
+    async def _sportmonk_client(self, ...):
+        ...
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDMxMjMxNiwtMTY4NDQ0OTY0NSwyMD
-A1NjYwMTA5LDIwODUwNzE4OTJdfQ==
+eyJoaXN0b3J5IjpbLTE0OTIwMzQzMTYsLTE4MDMxMjMxNiwtMT
+Y4NDQ0OTY0NSwyMDA1NjYwMTA5LDIwODUwNzE4OTJdfQ==
 -->
