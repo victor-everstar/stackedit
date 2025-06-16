@@ -128,6 +128,12 @@ prefect agent start --pool default-agent-pool
 ```bash
 python deploy_match.py
 ```
+
+# 17/6/2025
+
+ - [ ] 1. Thêm retry và timeout cho task worker (cân nhắc thêm circle breaker khi API sportmonk bị lỗi)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTY2MDEwOSwyMDg1MDcxODkyXX0=
+eyJoaXN0b3J5IjpbLTE2ODQ0NDk2NDUsMjAwNTY2MDEwOSwyMD
+g1MDcxODkyXX0=
 -->
