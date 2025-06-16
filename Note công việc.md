@@ -133,8 +133,108 @@ python deploy_match.py
 
  - [ ] 1. Thêm retry và timeout cho task worker (cân nhắc thêm circle breaker khi API sportmonk bị lỗi)
 ```python
+import asyncio
+import logging
 
+MAX_PROCESS_RETRIES = 3
+RETRY_DELAY_SECONDS = 2
+
+async def process_task(self, task: Dict[str, Any]) -> bool:
+    """Process a Sportmonks task with retry"""
+    for attempt in range(1, MAX_PROCESS_RETRIES + 1):
+        try:
+            task_data = task['data']
+            provider = ast.literal_eval(task_data.get('provider'))
+            provider_secret_token = provider.get('secret_token', "")
+            provider_endpoint = provider.get('base_endpoint', "")
+            entity_type = task_data.get('entity_type')
+
+            if not entity_type:
+                raise ValueError("Entity type not specified in task")
+
+            process_data_method_name = f"_process_data_{entity_type}"
+            process_data_method = getattr(self.api_processor, process_data_method_name, None)
+            if not process_data_method:
+                process_data_method = getattr(self, "_process_data_default", None)
+
+            all_data = await process_data_method(
+                base_endpoint=provider_endpoint,
+                provider_secret_token=provider_secret_token,
+                entity_type=entity_type
+            )
+            await self._store_data(entity_type, {"data": all_data})
+            return True
+
+        except (httpx.RequestError, httpx.HTTPStatusError, ConnectionError) as e:
+            self.logger.warning(f"[Attempt {attempt}] Temporary error: {e}")
+            if attempt == MAX_PROCESS_RETRIES:
+                break
+            await asyncio.sleep(RETRY_DELAY_SECONDS * attempt)
+
+        except Exception as e:
+            self.logger.error(f"Non-retryable error processing task: {e}")
+            break  # Không retry các lỗi không mong muốn (logic/code lỗi)
+
+    return False
+```
+```python
+async def _sportmonk_client(self, endpoint: str, provider_secret_token: str, custom_params: Dict[str, str] = {}) -> Dict[str, Any]:
+        if self.circuit_open_until:
+            now = asyncio.get_event_loop().time()
+            if now < self.circuit_open_until:
+                raise RuntimeError("Circuit breaker is open. Skipping request.")
+            else:
+                self.failure_count = 0
+                self.circuit_open_until = None
+
+        headers = {'Authorization': provider_secret_token}
+        page = 1
+        all_data = []
+        params = {
+            "page": page,
+            "per_page": DEFAULT_PER_PAGE_SPORTMONK,
+        }
+        final_params = {**params, **custom_params}
+
+        try:
+            async with httpx.AsyncClient(timeout=DEFAULT_API_TIMEOUT_SPORTMONK, headers=headers) as client:
+                while True:
+                    final_params['page'] = page
+                    response = await self._request_with_retry(client, endpoint, final_params)
+                    result = response.json()
+
+                    data = result.get("data", [])
+                    all_data.extend(data)
+
+                    pagination = result.get("pagination", {})
+                    next_page = pagination.get('next_page', None)
+                    if not next_page:
+                        break
+
+                    page += 1
+            return all_data
+
+        except Exception as e:
+            self.failure_count += 1
+            logger.error(f"API call failed ({self.failure_count}): {e}")
+            if self.failure_count >= CIRCUIT_BREAKER_THRESHOLD:
+                self.circuit_open_until = asyncio.get_event_loop().time() + CIRCUIT_BREAKER_TIMEOUT
+                logger.warning(f"Circuit breaker activated for {CIRCUIT_BREAKER_TIMEOUT} seconds.")
+            raise
+
+    async def _request_with_retry(self, client: httpx.AsyncClient, url: str, params: Dict[str, Any]) -> httpx.Response:
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                response = await client.get(url, params=params)
+                response.raise_for_status()
+                return response
+            except (httpx.RequestError, httpx.HTTPStatusError) as e:
+                logger.warning(f"Attempt {attempt} failed: {e}")
+                if attempt == MAX_RETRIES:
+                    raise
+                await asyncio.sleep(RETRY_BACKOFF * attempt)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzA3ODA4NDUsLTE2ODQ0NDk2NDUsMj
-AwNTY2MDEwOSwyMDg1MDcxODkyXX0=
+eyJoaXN0b3J5IjpbLTE4MDMxMjMxNiwtMTY4NDQ0OTY0NSwyMD
+A1NjYwMTA5LDIwODUwNzE4OTJdfQ==
 -->
