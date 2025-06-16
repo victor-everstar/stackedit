@@ -248,7 +248,84 @@ class SportmonksAPIProcessor:
 ```bash
 pip install aiobreaker tenacity
 ```
+```python
+import httpx
+import logging
+from typing import Dict, Any
+from aiobreaker import CircuitBreaker
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+
+from prisma.client import Prisma
+from common.constants import (
+    SPORTMONKS_ENDPOINT_PATH_MAPPING,
+    DEFAULT_PER_PAGE_SPORTMONK,
+    DEFAULT_API_TIMEOUT_SPORTMONK
+)
+
+# Logger
+logger = logging.getLogger("SportmonksAPIProcessor")
+
+# Circuit Breaker config: max 3 lỗi → mở trong 60s
+breaker = CircuitBreaker(fail_max=3, reset_timeout=60)
+
+class SportmonksAPIProcessor:
+
+    def __init__(self, prisma_client: Prisma):
+        self.prisma_client = prisma_client
+
+    def get_url_endpoint(self, base_url: str, entity_type: str):
+        base_entity_path = SPORTMONKS_ENDPOINT_PATH_MAPPING.get(entity_type)
+        if not base_entity_path:
+            raise ValueError("Entity is not supported")
+        return f'{base_url}{base_entity_path}'
+
+    @breaker
+    @retry(
+        stop=stop_after_attempt(3),  # Retry 3 lần
+        wait=wait_exponential(multiplier=1, min=2, max=10),  # exponential backoff
+        retry=retry_if_exception_type((httpx.TimeoutException, httpx.HTTPStatusError)),
+        reraise=True
+    )
+    async def _sportmonk_client(self, endpoint: str, provider_secret_token: str, custom_params: Dict[str, str] = {}) -> Dict[str, Any]:
+        headers = {'Authorization': provider_secret_token}
+        page = 1
+        all_data = []
+        params = {
+            "page": page,
+            "per_page": DEFAULT_PER_PAGE_SPORTMONK,
+        }
+        final_params = {**params, **custom_params}
+
+        async with httpx.AsyncClient(timeout=DEFAULT_API_TIMEOUT_SPORTMONK, headers=headers) as client:
+            while True:
+                final_params['page'] = page
+                try:
+                    response = await client.get(endpoint, params=final_params)
+                    response.raise_for_status()
+                    result = response.json()
+                except httpx.HTTPError as e:
+                    logger.error(f"HTTP error during Sportmonks API call: {e}")
+                    raise
+                except Exception as e:
+                    logger.exception("Unexpected error during API call")
+                    raise
+
+                data = result.get("data", [])
+                all_data.extend(data)
+
+                pagination = result.get("pagination", {})
+                next_page = pagination.get('next_page', None)
+                if not next_page:
+                    break
+                page += 1
+
+        return all_data
+
+```
+
+ - [ ] Nghiên cứu dữ liệu scheduler
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYxNTMwMDI4LC0xODAzMTIzMTYsLTE2OD
-Q0NDk2NDUsMjAwNTY2MDEwOSwyMDg1MDcxODkyXX0=
+eyJoaXN0b3J5IjpbLTUwNTYyMDcwOSwtMTgwMzEyMzE2LC0xNj
+g0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NTA3MTg5Ml19
 -->
