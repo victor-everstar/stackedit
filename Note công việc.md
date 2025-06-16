@@ -244,9 +244,11 @@ class SportmonksAPIProcessor:
     @breaker
     async def _sportmonk_client(self, ...):
         ...
-
+```
+```bash
+pip install aiobreaker tenacity
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTIwMzQzMTYsLTE4MDMxMjMxNiwtMT
-Y4NDQ0OTY0NSwyMDA1NjYwMTA5LDIwODUwNzE4OTJdfQ==
+eyJoaXN0b3J5IjpbMzYxNTMwMDI4LC0xODAzMTIzMTYsLTE2OD
+Q0NDk2NDUsMjAwNTY2MDEwOSwyMDg1MDcxODkyXX0=
 -->
