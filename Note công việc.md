@@ -330,6 +330,7 @@ class SportmonksAPIProcessor:
  - [ ] Bổ sung lấy dữ liệu Types, Teams, Player, Team Squats
  - [ ] Từ Type, mapping sang bảng Event hoặc Score để lấy thông tin của các sự kiện trong trận đấu
  - [ ] Update cơ chế schedule linh hoạt hơn hỗ trợ nhiều worker cùng lấy 1 loại dữ liệu, ý tưởng: schedule cứ lập lịch, mỗi task sẽ lấy dữ liệu từ page x tới y (nhiều worker subcribe) => nhược điểm (tốn token, bị rate limit)
+ - [ ] Sử dụng raw query update bulk data
 ```python
 def generate_upsert_query(table, data, conflict_key="id"):
     columns = data.keys()
@@ -356,7 +357,7 @@ query, params = generate_upsert_query("User", data)
 await prisma.execute_raw(query, *params)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1MDAzNDExLC01ODA4MTA4OTIsMTQ1Mj
+eyJoaXN0b3J5IjpbNTUxNTQ2NzU1LC01ODA4MTA4OTIsMTQ1Mj
 E0NzQwNCw4MzQyNjgzMCwtNTA1NjIwNzA5LC0xODAzMTIzMTYs
 LTE2ODQ0NDk2NDUsMjAwNTY2MDEwOSwyMDg1MDcxODkyXX0=
 -->
