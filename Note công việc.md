@@ -329,10 +329,10 @@ class SportmonksAPIProcessor:
 
  - [ ] Bổ sung lấy dữ liệu Types, Teams, Player, Team Squats
  - [ ] Từ Type, mapping sang bảng Event hoặc Score để lấy thông tin của các sự kiện trong trận đấu
- - [ ] Update cơ chế schedule linh hoạt hơn hỗ trợ nhiều worker cùng lấy 1 loại dữ liệu, ý tưởng: schedule cứ lập lịch, mỗi task sẽ lấy dữ liệu từ page x tới y (nhiều worker subcribe) => nhược điểm (tốn token, bj rate limit)
+ - [ ] Update cơ chế schedule linh hoạt hơn hỗ trợ nhiều worker cùng lấy 1 loại dữ liệu, ý tưởng: schedule cứ lập lịch, mỗi task sẽ lấy dữ liệu từ page x tới y (nhiều worker subcribe) => nhược điểm (tốn token, bị rate limit)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDgxMDg5MiwxNDUyMTQ3NDA0LDgzND
-I2ODMwLC01MDU2MjA3MDksLTE4MDMxMjMxNiwtMTY4NDQ0OTY0
-NSwyMDA1NjYwMTA5LDIwODUwNzE4OTJdfQ==
+eyJoaXN0b3J5IjpbMTM3NDc1MDA2NywtNTgwODEwODkyLDE0NT
+IxNDc0MDQsODM0MjY4MzAsLTUwNTYyMDcwOSwtMTgwMzEyMzE2
+LC0xNjg0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NTA3MTg5Ml19
 -->
