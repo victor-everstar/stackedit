@@ -325,7 +325,14 @@ class SportmonksAPIProcessor:
 
  - [ ] Nghiên cứu dữ liệu scheduler
 
+# Ngày 18/5/2025
+
+ - [ ] Bổ sung lấy dữ liệu Types, Teams, Player, Team Squats
+ - [ ] Từ Type, mapping sang bảng Event hoặc Score để lấy thông tin của các sự kiện trong trận đấu
+ - [ ] 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTYyMDcwOSwtMTgwMzEyMzE2LC0xNj
-g0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NTA3MTg5Ml19
+eyJoaXN0b3J5IjpbODM0MjY4MzAsLTUwNTYyMDcwOSwtMTgwMz
+EyMzE2LC0xNjg0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NTA3MTg5
+Ml19
 -->
