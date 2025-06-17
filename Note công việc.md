@@ -323,7 +323,7 @@ class SportmonksAPIProcessor:
 
 ```
 
- - [ ] Nghiên cứu dữ liệu scheduler
+ - [x] Nghiên cứu dữ liệu scheduler
 
 # Ngày 18/5/2025
 
@@ -332,7 +332,7 @@ class SportmonksAPIProcessor:
  - [ ] Update cơ chế schedule linh hoạt hơn hỗ trợ nhiều worker cùng lấy 1 loại dữ liệu, ý tưởng: schedule cứ lập lịch, mỗi task sẽ lấy dữ liệu từ page x tới y (nhiều worker subcribe) => nhược điểm (tốn token, bj rate limit)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjE0NzQwNCw4MzQyNjgzMCwtNTA1Nj
-IwNzA5LC0xODAzMTIzMTYsLTE2ODQ0NDk2NDUsMjAwNTY2MDEw
-OSwyMDg1MDcxODkyXX0=
+eyJoaXN0b3J5IjpbLTU4MDgxMDg5MiwxNDUyMTQ3NDA0LDgzND
+I2ODMwLC01MDU2MjA3MDksLTE4MDMxMjMxNiwtMTY4NDQ0OTY0
+NSwyMDA1NjYwMTA5LDIwODUwNzE4OTJdfQ==
 -->
