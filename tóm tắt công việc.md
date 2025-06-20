@@ -4,9 +4,10 @@
 
 
 # Câu hỏi
-- 
+- Dữ liệu statistic của cầu thủ sẽ được tính lại theo mùa hay theo từng trận đấu hay theo round?
+- Các event
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDA5MjM4NSw2NDMzODI5ODUsMzYzMj
-g0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mjk5
-LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+eyJoaXN0b3J5IjpbNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMyOD
+QwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOTks
+MTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
 -->
