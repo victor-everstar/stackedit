@@ -8,9 +8,9 @@
 # Câu hỏi
 - Dữ liệu statistic của cầu thủ sẽ được tính lại theo mùa hay theo từng trận đấu hay theo round?
 - Khi trận đấu diễn ra, tôi lấy player theo fixture thì player statisitc của player có được update tại thời điểm đó không ?
-- Thông 
+- Thông tin thời điểm kết thúc trận đấu có thể cung cấp luôn trong API inplay không, hay trận đấu sau khi kết thúc 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTc4MDcwODEsMTQ4MTQ5ODIxMSwtOT
+eyJoaXN0b3J5IjpbLTEyMjM3MjQ5MDMsMTQ4MTQ5ODIxMSwtOT
 EwMTA3NTIzLDIxMTU5MjQ3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2
 NCw2NDMzODI5ODUsMzYzMjg0MDIwLDEzMTczNzM4OTEsMTg5MD
 E5OTA0OSwxMjE5NjQ0Mjk5LDE3MzQwNjI1ODgsNTM0NjAzMTk3
