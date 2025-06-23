@@ -36,13 +36,20 @@ Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh 
 	- Nếu không oke thì chuyển qua phương án trong trận đấu chỉ cập nhật chỉ số khi có các big event, còn sẽ tính lại fantasy point sau trận đấu.
 - Khảo sát thêm dữ liệu từ một số data provider khác: https://highlightly.net/, https://sportradar.com/ 
 
+Bên sportmonks có phản hồi về các câu hỏi của mình rồi a, em tóm tắt qua
+- Dữ liệu Player statistics thì được cung cấp theo 3 cấp :
 
+-   **Per Match**: thông qua việc include  `statistics`  trong fixture endpoint.
+    
+-   **Per Season**: Accessed through the  `statistics`  include on the player endpoint using the appropriate  `filters[playerstatisticSeasons]`.
+    
+-   **Per Round**: This is not directly provided, but you can retrieve fixture data by round and aggregate stats manually.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODg5Nzk5NiwtMTgwMTA0OTQ5MSwtMT
-kxNjM4NDkxNiwtMTU5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2
-ODUxMTM1MSwtMTM0MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMD
-c1MjMsMjExNTkyNDc1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0
-MzM4Mjk4NSwzNjMyODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MD
-Q5LDEyMTk2NDQyOTksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYy
-OTYzMTE0N119
+eyJoaXN0b3J5IjpbMjQ2NDY5MjE4LC03MDg4OTc5OTYsLTE4MD
+EwNDk0OTEsLTE5MTYzODQ5MTYsLTE1OTAxNjUxMjcsLTIwODkz
+NjIzNDgsLTIwNjg1MTEzNTEsLTEzNDM0MTg1MDgsMTQ4MTQ5OD
+IxMSwtOTEwMTA3NTIzLDIxMTU5MjQ3NTAsNTQxMzM3MDY5LDQ3
+NTU0MjY2NCw2NDMzODI5ODUsMzYzMjg0MDIwLDEzMTczNzM4OT
+EsMTg5MDE5OTA0OSwxMjE5NjQ0Mjk5LDE3MzQwNjI1ODgsNTM0
+NjAzMTk3XX0=
 -->
