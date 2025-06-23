@@ -10,10 +10,13 @@
 - Khi trận đấu diễn ra, tôi lấy player theo fixture thì player statisitc của player có được update tại thời điểm đó không ?
 - Làm thế nào biết thời điểm trận đấu đã kết thúc (bao gồm cả bù giờ). Trong inplay có lấy được thông tin này không?
 Đây là một số câu hỏi về dữ liệu mà e còn thắc mắc, e đã gửi mail + inbox trên IG của sportmonks để hỏi.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjg1MTEzNTEsLTEzNDM0MTg1MDgsMT
-Q4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5MjQ3NTAsNTQxMzM3
-MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYzMjg0MDIwLDEzMT
-czNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mjk5LDE3MzQwNjI1
-ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+eyJoaXN0b3J5IjpbMTc4NjQ4MTM2MywtMjA2ODUxMTM1MSwtMT
+M0MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTky
+NDc1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNj
+MyODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQy
+OTksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
 -->
