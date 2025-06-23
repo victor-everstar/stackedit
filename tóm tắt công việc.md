@@ -45,9 +45,9 @@ Bên sportmonks có phản hồi về các câu hỏi của mình rồi a, em t�
 	    
 	-   **Per Round**: Không hỗ trợ lấy player statistic theo round, tuy nhiên thì mình có thể lấy dữ liệu fixture data theo round của từng player và tự tổng hợp lại.
 - Trong  API lấy dữ liệu realtime thì cũng trả về player_statistic thông qua `include=statistics` 
-	- Khuyến nghị với livescores thì nên gọi lại api 1-2s một lần để lấy được latest data (theo khuyến nghị của s
+	- Khuyến nghị với livescores thì nên gọi lại api 1-2s một lần để lấy được latest data (theo khuyến nghị của sportmonks)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQyNDg2OTMsLTcwODg5Nzk5NiwtMT
+eyJoaXN0b3J5IjpbLTE2MTU3NzYyMzUsLTcwODg5Nzk5NiwtMT
 gwMTA0OTQ5MSwtMTkxNjM4NDkxNiwtMTU5MDE2NTEyNywtMjA4
 OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0MzQxODUwOCwxNDgxND
 k4MjExLC05MTAxMDc1MjMsMjExNTkyNDc1MCw1NDEzMzcwNjks
