@@ -44,12 +44,14 @@ Bên sportmonks có phản hồi về các câu hỏi của mình rồi a, em t�
 	-   **Per Season**: lấy thông qua việc include  `statistics`  trong player endpoint và sử dụng filter  `filters[playerstatisticSeasons]`.
 	    
 	-   **Per Round**: Không hỗ trợ lấy player statistic theo round, tuy nhiên thì mình có thể lấy dữ liệu fixture data theo round của từng player và tự tổng hợp lại.
+- Trong  API lấy dữ liệu realtime thì cũng trả về player_statistic thông qua `include=statistics` 
+	- Khuyến nghị với livescores thì nên gọi lại api 1-2s một lần để lấy được latest data (theo khuyến nghị của s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3ODc1MTg0MSwtNzA4ODk3OTk2LC0xOD
-AxMDQ5NDkxLC0xOTE2Mzg0OTE2LC0xNTkwMTY1MTI3LC0yMDg5
-MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQzNDE4NTA4LDE0ODE0OT
-gyMTEsLTkxMDEwNzUyMywyMTE1OTI0NzUwLDU0MTMzNzA2OSw0
-NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4NDAyMCwxMzE3MzczOD
-kxLDE4OTAxOTkwNDksMTIxOTY0NDI5OSwxNzM0MDYyNTg4LDUz
-NDYwMzE5N119
+eyJoaXN0b3J5IjpbLTE5NDQyNDg2OTMsLTcwODg5Nzk5NiwtMT
+gwMTA0OTQ5MSwtMTkxNjM4NDkxNiwtMTU5MDE2NTEyNywtMjA4
+OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0MzQxODUwOCwxNDgxND
+k4MjExLC05MTAxMDc1MjMsMjExNTkyNDc1MCw1NDEzMzcwNjks
+NDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMyODQwMjAsMTMxNzM3Mz
+g5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOTksMTczNDA2MjU4OCw1
+MzQ2MDMxOTddfQ==
 -->
