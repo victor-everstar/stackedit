@@ -26,7 +26,8 @@ Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tín
 - `block_defensive`
 
 
-Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh `fixture` (trận đấu), và `type`: loại sự kiện diễn ra. 
+Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh `fixture` (trận đấu), và `type`: loại sự kiện diễn ra. Dựa vào đó có thể đánh giá các trường dữ liệu mà sportmonks cung cấp có phù hợp với hệ thống cân bằng hay không.
+
 → có thể cân nhắc thay bằng chỉ số khác.
 → các trường dữ liệu player_statistic (theo trận đấu) đáp ứng đủ để có thể tính điểm fantasy point theo trận đấu
 
@@ -36,10 +37,11 @@ Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTA4NjAzNywtMTkxNjM4NDkxNiwtMT
-U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
-MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
-c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
-ODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOT
-ksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
+eyJoaXN0b3J5IjpbLTE4MDEwNDk0OTEsLTE5MTYzODQ5MTYsLT
+E1OTAxNjUxMjcsLTIwODkzNjIzNDgsLTIwNjg1MTEzNTEsLTEz
+NDM0MTg1MDgsMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5Mj
+Q3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYz
+Mjg0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mj
+k5LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+
 -->
