@@ -19,13 +19,13 @@
  
  # Báo cáo hiện trạng dữ liệu sportmonks
  
-
+- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, big event trong trận, 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODg3NjMyMywtMTkxNjM4NDkxNiwtMT
-U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
-MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
-c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
-ODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOT
-ksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
+eyJoaXN0b3J5IjpbNTkzMTA0OTY0LC0xOTE2Mzg0OTE2LC0xNT
+kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
+NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
+UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
+NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwNDksMTIxOTY0NDI5OS
+wxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5NjMxMTQ3XX0=
 -->
