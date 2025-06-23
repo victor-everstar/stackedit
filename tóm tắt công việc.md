@@ -22,14 +22,15 @@
 - Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, big event trong trận (yellow card, red card, ....). 
 - Dữ liệu còn thiếu: dữ liệu `latest_player_statistic` là dữ liệu phân tích các chỉ số của cầu thủ trong trận đấu.
 ## Đánh giá dữ liệu
-Dựa trên cấu trúc dữ liệu hiện tại, khi
+Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tính toán hệ thống các công thức cân bằng thì dữu l
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwNDcxMjksLTE5MTYzODQ5MTYsLTE1OT
-AxNjUxMjcsLTIwODkzNjIzNDgsLTIwNjg1MTEzNTEsLTEzNDM0
-MTg1MDgsMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5MjQ3NT
-AsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYzMjg0
-MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mjk5LD
-E3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+eyJoaXN0b3J5IjpbLTE3MjMxNjIwOTMsLTE5MTYzODQ5MTYsLT
+E1OTAxNjUxMjcsLTIwODkzNjIzNDgsLTIwNjg1MTEzNTEsLTEz
+NDM0MTg1MDgsMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5Mj
+Q3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYz
+Mjg0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mj
+k5LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+
 -->
