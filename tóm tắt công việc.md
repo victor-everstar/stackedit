@@ -14,13 +14,15 @@
 
 # Trong hệ thống công thức hiện tại, thiếu các trường
 
- - `passes_into_penalty_area`
- - `block_defensive`
+ 1. `passes_into_penalty_area`
+ 2. `block_defensive`
  
+ # Báo cáo hiện trạng dữ liệu sportmonks
  
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MjczNjc1OCwtMTkxNjM4NDkxNiwtMT
+eyJoaXN0b3J5IjpbLTU4ODg3NjMyMywtMTkxNjM4NDkxNiwtMT
 U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
 MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
 c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
