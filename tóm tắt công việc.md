@@ -19,7 +19,7 @@
  
  # Báo cáo hiện trạng dữ liệu sportmonks
  ## Hiện trạng dữ liệu
-- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, big event trong trận (yellow card, red card, ....). 
+- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, big event trong trận (yellow card, red card, ....), event timeline (luồng diễn ra các event trong trận đấu),... 
 - Dữ liệu còn thiếu: dữ liệu `latest_player_statistic` là dữ liệu phân tích các chỉ số của cầu thủ trong trận đấu.
 ## Đánh giá dữ liệu
 Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tính toán hệ thống các công thức cân bằng thì dữ liệu statistic của player theo trận đấu của sportmonks chỉ thiếu 2 trường:
@@ -31,11 +31,11 @@ Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tín
 
 ## Các bước tiếp theo
 - Q&A với sportmonks giải đáp các thắc mắc để lấy được dữ liệu `player_statistic` trong trận đấu → Nếu ok thì sẽ mua tiếp dữ liệu và xây dựng đánh giá thử thuật toán cân bằng
-- Khảo sát thêm dữ liệu từ một số data pro
+- Khảo sát thêm dữ liệu từ một số data provider khác: https://highlightly.net/, https://sportradar.com/ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMTkyOTE2LC0xOTE2Mzg0OTE2LC0xNT
+eyJoaXN0b3J5IjpbNjgwNjM2MzUxLC0xOTE2Mzg0OTE2LC0xNT
 kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
 NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
 UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
