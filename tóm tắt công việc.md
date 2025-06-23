@@ -39,17 +39,17 @@ Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh 
 Bên sportmonks có phản hồi về các câu hỏi của mình rồi a, em tóm tắt qua
 - Dữ liệu Player statistics thì được cung cấp theo 3 cấp :
 
--   **Per Match**: thông qua việc include  `statistics`  trong fixture endpoint.
-    
--   **Per Season**: Accessed through the  `statistics`  include on the player endpoint using the appropriate  `filters[playerstatisticSeasons]`.
-    
--   **Per Round**: This is not directly provided, but you can retrieve fixture data by round and aggregate stats manually.
+	-   **Per Match**: thông qua việc include  `statistics`  trong fixture endpoint.
+	    
+	-   **Per Season**: lấy thông qua việc include  `statistics`  trong player endpoint và sử dụng filter  `filters[playerstatisticSeasons]`.
+	    
+	-   **Per Round**: Không hỗ trợ lấy player statistic theo round, tuy nhiên thì mình có thể lấy dữ liệu fixture data theo round của từng player và tự tổng hợp lại.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2NDY5MjE4LC03MDg4OTc5OTYsLTE4MD
-EwNDk0OTEsLTE5MTYzODQ5MTYsLTE1OTAxNjUxMjcsLTIwODkz
-NjIzNDgsLTIwNjg1MTEzNTEsLTEzNDM0MTg1MDgsMTQ4MTQ5OD
-IxMSwtOTEwMTA3NTIzLDIxMTU5MjQ3NTAsNTQxMzM3MDY5LDQ3
-NTU0MjY2NCw2NDMzODI5ODUsMzYzMjg0MDIwLDEzMTczNzM4OT
-EsMTg5MDE5OTA0OSwxMjE5NjQ0Mjk5LDE3MzQwNjI1ODgsNTM0
-NjAzMTk3XX0=
+eyJoaXN0b3J5IjpbLTg3ODc1MTg0MSwtNzA4ODk3OTk2LC0xOD
+AxMDQ5NDkxLC0xOTE2Mzg0OTE2LC0xNTkwMTY1MTI3LC0yMDg5
+MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQzNDE4NTA4LDE0ODE0OT
+gyMTEsLTkxMDEwNzUyMywyMTE1OTI0NzUwLDU0MTMzNzA2OSw0
+NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4NDAyMCwxMzE3MzczOD
+kxLDE4OTAxOTkwNDksMTIxOTY0NDI5OSwxNzM0MDYyNTg4LDUz
+NDYwMzE5N119
 -->
