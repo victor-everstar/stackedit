@@ -26,15 +26,18 @@ Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tín
 - `passes_into_penalty_area`
 - `block_defensive`
 
-→ có thể cân nhắc thay bằng các trường khác.
-→ các trường dữ liệu player_statistic (theo trận đấu) đáp ứng đủ để có thể tính điểm fantasy point theo 
+→ có thể cân nhắc thay bằng chỉ số khác.
+→ các trường dữ liệu player_statistic (theo trận đấu) đáp ứng đủ để có thể tính điểm fantasy point theo trận đấu
+
+## Các bước tiếp theo
+- 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDM3OTU5MCwtMTkxNjM4NDkxNiwtMT
-U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
-MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
-c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
-ODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOT
-ksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
+eyJoaXN0b3J5IjpbNDY2NTc0MDM5LC0xOTE2Mzg0OTE2LC0xNT
+kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
+NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
+UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
+NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwNDksMTIxOTY0NDI5OS
+wxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5NjMxMTQ3XX0=
 -->
