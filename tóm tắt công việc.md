@@ -33,15 +33,16 @@ Hầu hết các dữ liệu quan trọng trong trận đấu đều xoay quanh 
 
 ## Các bước tiếp theo
 - Q&A với sportmonks giải đáp các thắc mắc để lấy được dữ liệu `player_statistic` trong trận đấu → Nếu ok thì sẽ mua tiếp dữ liệu và xây dựng đánh giá thử thuật toán cân bằng
+	- Nếu không oke thì tỏng
 - Khảo sát thêm dữ liệu từ một số data provider khác: https://highlightly.net/, https://sportradar.com/ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDEwNDk0OTEsLTE5MTYzODQ5MTYsLT
-E1OTAxNjUxMjcsLTIwODkzNjIzNDgsLTIwNjg1MTEzNTEsLTEz
-NDM0MTg1MDgsMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5Mj
-Q3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYz
-Mjg0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mj
-k5LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
-
+eyJoaXN0b3J5IjpbMzYyMjUyMTc3LC0xODAxMDQ5NDkxLC0xOT
+E2Mzg0OTE2LC0xNTkwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4
+NTExMzUxLC0xMzQzNDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNz
+UyMywyMTE1OTI0NzUwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQz
+MzgyOTg1LDM2MzI4NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwND
+ksMTIxOTY0NDI5OSwxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5
+NjMxMTQ3XX0=
 -->
