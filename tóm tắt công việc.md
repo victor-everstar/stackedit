@@ -30,14 +30,14 @@ Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tín
 → các trường dữ liệu player_statistic (theo trận đấu) đáp ứng đủ để có thể tính điểm fantasy point theo trận đấu
 
 ## Các bước tiếp theo
-- 
+- Q&A với sportmonks giải đáp các thắc mắc để lấy được dữ liệu `player_statistic` trong trận đấu → Nếu ok thì sẽ mua tiếp dữ liệu và xây 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2NTc0MDM5LC0xOTE2Mzg0OTE2LC0xNT
-kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
-NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
-UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
-NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwNDksMTIxOTY0NDI5OS
-wxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5NjMxMTQ3XX0=
+eyJoaXN0b3J5IjpbMTU5MzAyMjg5NCwtMTkxNjM4NDkxNiwtMT
+U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
+MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
+c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
+ODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOT
+ksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
 -->
