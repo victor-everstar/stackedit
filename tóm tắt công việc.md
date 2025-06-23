@@ -12,20 +12,19 @@
 Đây là một số câu hỏi về dữ liệu mà e còn thắc mắc, e đã gửi mail + inbox trên IG của sportmonks để hỏi.
 
 
-# Trong hệ thống công thức hiện tại, thiếu các trường
 
- 1. `passes_into_penalty_area`
- 2. `block_defensive`
- 
+  
  # Báo cáo hiện trạng dữ liệu sportmonks
  ## Hiện trạng dữ liệu
-- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, big event trong trận (yellow card, red card, ....), event timeline (luồng diễn ra các event trong trận đấu),... 
+- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, score, standing, comment, news,. lineup,  big event trong trận (yellow card, red card, ....), event timeline (luồng diễn ra các event trong trận đấu),... 
 - Dữ liệu còn thiếu: dữ liệu `latest_player_statistic` là dữ liệu phân tích các chỉ số của cầu thủ trong trận đấu.
 ## Đánh giá dữ liệu
 Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tính toán hệ thống các công thức cân bằng thì dữ liệu statistic của player theo trận đấu của sportmonks chỉ thiếu 2 trường:
 - `passes_into_penalty_area`
 - `block_defensive`
 
+
+Hầu hết các dữ liệu quan trọng trong trận đấu 
 → có thể cân nhắc thay bằng chỉ số khác.
 → các trường dữ liệu player_statistic (theo trận đấu) đáp ứng đủ để có thể tính điểm fantasy point theo trận đấu
 
@@ -35,10 +34,10 @@ Dựa trên cấu trúc dữ liệu hiện tại, khi áp dụng vào để tín
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwNjM2MzUxLC0xOTE2Mzg0OTE2LC0xNT
-kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
-NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
-UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
-NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwNDksMTIxOTY0NDI5OS
-wxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5NjMxMTQ3XX0=
+eyJoaXN0b3J5IjpbMTgyNzU1NDEzNSwtMTkxNjM4NDkxNiwtMT
+U5MDE2NTEyNywtMjA4OTM2MjM0OCwtMjA2ODUxMTM1MSwtMTM0
+MzQxODUwOCwxNDgxNDk4MjExLC05MTAxMDc1MjMsMjExNTkyND
+c1MCw1NDEzMzcwNjksNDc1NTQyNjY0LDY0MzM4Mjk4NSwzNjMy
+ODQwMjAsMTMxNzM3Mzg5MSwxODkwMTk5MDQ5LDEyMTk2NDQyOT
+ksMTczNDA2MjU4OCw1MzQ2MDMxOTcsMTYyOTYzMTE0N119
 -->
