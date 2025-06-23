@@ -8,10 +8,11 @@
 # Câu hỏi
 - Dữ liệu statistic của cầu thủ sẽ được tính lại theo mùa hay theo từng trận đấu hay theo round?
 - Khi trận đấu diễn ra, tôi lấy player theo fixture thì player statisitc của player có được update tại thời điểm đó không ?
+- Thông 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMT
-U5MjQ3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUs
-MzYzMjg0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5Nj
-Q0Mjk5LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDdd
-fQ==
+eyJoaXN0b3J5IjpbLTEyOTc4MDcwODEsMTQ4MTQ5ODIxMSwtOT
+EwMTA3NTIzLDIxMTU5MjQ3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2
+NCw2NDMzODI5ODUsMzYzMjg0MDIwLDEzMTczNzM4OTEsMTg5MD
+E5OTA0OSwxMjE5NjQ0Mjk5LDE3MzQwNjI1ODgsNTM0NjAzMTk3
+LDE2Mjk2MzExNDddfQ==
 -->
