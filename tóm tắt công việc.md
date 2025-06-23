@@ -19,13 +19,14 @@
  
  # Báo cáo hiện trạng dữ liệu sportmonks
  
-- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, big event trong trận, 
+- Các dữ liệu đã có: các dữ liệu liên quan đến một mùa giải, bao gồm league, season, round, schedule, team, player, squad, big event trong trận (yellow card, red card, ....). 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzMTA0OTY0LC0xOTE2Mzg0OTE2LC0xNT
-kwMTY1MTI3LC0yMDg5MzYyMzQ4LC0yMDY4NTExMzUxLC0xMzQz
-NDE4NTA4LDE0ODE0OTgyMTEsLTkxMDEwNzUyMywyMTE1OTI0Nz
-UwLDU0MTMzNzA2OSw0NzU1NDI2NjQsNjQzMzgyOTg1LDM2MzI4
-NDAyMCwxMzE3MzczODkxLDE4OTAxOTkwNDksMTIxOTY0NDI5OS
-wxNzM0MDYyNTg4LDUzNDYwMzE5NywxNjI5NjMxMTQ3XX0=
+eyJoaXN0b3J5IjpbLTE5MzY4NTY2ODQsLTE5MTYzODQ5MTYsLT
+E1OTAxNjUxMjcsLTIwODkzNjIzNDgsLTIwNjg1MTEzNTEsLTEz
+NDM0MTg1MDgsMTQ4MTQ5ODIxMSwtOTEwMTA3NTIzLDIxMTU5Mj
+Q3NTAsNTQxMzM3MDY5LDQ3NTU0MjY2NCw2NDMzODI5ODUsMzYz
+Mjg0MDIwLDEzMTczNzM4OTEsMTg5MDE5OTA0OSwxMjE5NjQ0Mj
+k5LDE3MzQwNjI1ODgsNTM0NjAzMTk3LDE2Mjk2MzExNDddfQ==
+
 -->
