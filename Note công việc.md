@@ -358,11 +358,11 @@ await prisma.execute_raw(query, *params)
 ```
 
 ```bash
-docker-compose run --rm worker bash -c "PYTHONPATH=./src python src/scheduler.py"
+docker-compose run --rm prefect-worker bash -c "PYTHONPATH=./src python src/scheduler.py"
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzMDY4MzMwLDU1MTU0Njc1NSwtNTgwOD
-EwODkyLDE0NTIxNDc0MDQsODM0MjY4MzAsLTUwNTYyMDcwOSwt
-MTgwMzEyMzE2LC0xNjg0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NT
-A3MTg5Ml19
+eyJoaXN0b3J5IjpbLTgzMTI1NjcyMCw5NTMwNjgzMzAsNTUxNT
+Q2NzU1LC01ODA4MTA4OTIsMTQ1MjE0NzQwNCw4MzQyNjgzMCwt
+NTA1NjIwNzA5LC0xODAzMTIzMTYsLTE2ODQ0NDk2NDUsMjAwNT
+Y2MDEwOSwyMDg1MDcxODkyXX0=
 -->
