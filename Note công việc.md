@@ -356,8 +356,13 @@ data = {"id": 1, "name": "Alice New", "email": None}  # email giữ nguyên
 query, params = generate_upsert_query("User", data)
 await prisma.execute_raw(query, *params)
 ```
+
+```bash
+docker-compose run --rm worker bash -c "PYTHONPATH=./src python src/scheduler.py"
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxNTQ2NzU1LC01ODA4MTA4OTIsMTQ1Mj
-E0NzQwNCw4MzQyNjgzMCwtNTA1NjIwNzA5LC0xODAzMTIzMTYs
-LTE2ODQ0NDk2NDUsMjAwNTY2MDEwOSwyMDg1MDcxODkyXX0=
+eyJoaXN0b3J5IjpbOTUzMDY4MzMwLDU1MTU0Njc1NSwtNTgwOD
+EwODkyLDE0NTIxNDc0MDQsODM0MjY4MzAsLTUwNTYyMDcwOSwt
+MTgwMzEyMzE2LC0xNjg0NDQ5NjQ1LDIwMDU2NjAxMDksMjA4NT
+A3MTg5Ml19
 -->
